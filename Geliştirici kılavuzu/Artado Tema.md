@@ -1,155 +1,154 @@
-# How to Develop an Artado Theme
+# Artado Teması Nasıl Geliştirilir
 
-This guide will walk you through the process of creating a custom theme for [Artado Search](https://www.artadosearch.com). Whether you're new to CSS or a seasoned developer, you'll find the steps and tips you need to design a unique look for Artado.
+Bu kılavuz, [Artado Search](https://www.artadosearch.com) için özel bir tema oluşturma sürecinde size yol gösterecektir. İster CSS'de yeni olun ister deneyimli bir geliştirici olun, Artado için benzersiz bir görünüm tasarlamak için ihtiyacınız olan adımları ve ipuçlarını bulacaksınız.
 
-## Getting Started
+## Başlarken
 
-To create a theme for Artado Search, you'll primarily be working with CSS. You can use the [Stylus Editor](https://add0n.com/stylus.html) to test your theme live as you create it, allowing you to see changes in real-time.
+Artado Search için bir tema oluşturmak için öncelikle CSS ile çalışacaksınız. Temanızı oluştururken canlı olarak test etmek için [Stylus Editor](https://add0n.com/stylus.html)'ı kullanabilir ve değişiklikleri gerçek zamanlı olarak görebilirsiniz.
 
-### Installing Stylus Editor
+ ### Stylus Editor'ü Yükleme
 
-1. **Install Stylus**: First, install the Stylus browser extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/styl-us/).
-2. **Access Stylus Editor**:
-   - Click the Stylus icon in your browser's toolbar.
-   - Select **Manage** to access your styles.
-   - Press **Write New Style** to start creating your theme.
+1. **Stylus'u Yükleyin**: Öncelikle, [Chrome Web Mağazası](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) veya [Firefox Eklentileri](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)'nden Stylus tarayıcı eklentisini yükleyin.
+2. **Stylus Editor'e Erişim**:
+- Tarayıcınızın araç çubuğundaki Stylus simgesine tıklayın.
+- Stillerinize erişmek için **Yönet**'i seçin.
+- Temanızı oluşturmaya başlamak için **Yeni Stil Yaz**'a basın.
 
-### Setting Up Your Theme
+### Temanızı Ayarlama
 
-- **Target Artado Search**: In the Stylus Editor, change the "Applies to" setting to only apply your CSS to `https://www.artadosearch.com`. This ensures that your theme is applied only to Artado Search and not to every website you visit.
+- **Hedef Artado Araması**: Stylus Editor'de, CSS'nizi yalnızca `https://www.artadosearch.com`'a uygulamak için "Şuna Uygulanır" ayarını değiştirin.  Bu, temanızın yalnızca Artado Arama'ya uygulanmasını ve ziyaret ettiğiniz her web sitesine uygulanmamasını sağlar.
 
-## Basics
+## Temeller
 
-### Adding a Background Image
+### Arka Plan Resmi Ekleme
 
-Customizing the background is a great way to set the tone of your theme.
+Arka planı özelleştirmek, temanızın tonunu ayarlamanın harika bir yoludur.
 
-#### Main Page Background
+#### Ana Sayfa Arka Planı
 
-To add a background image that only appears on the main search page:
+Yalnızca ana arama sayfasında görünen bir arka plan resmi eklemek için:
 
 ```css
 #homepage {
-    background: url("Image link") no-repeat center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+background: url("Resim bağlantısı") no-repeat center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 ```
 
-#### Global Background
+#### Genel Arka Plan
 
-To apply the background image to all pages, including search results and settings:
+Arka plan resmini arama sonuçları ve ayarlar dahil tüm sayfalara uygulamak için:
 
 ```css
 body {
-    background-image: url("Image link");
+background-image: url("Resim bağlantısı");
 }
 ```
 
-### Customizing the Search Bar
+### Arama Çubuğunu Özelleştirme
 
-The search bar is one of the most prominent elements on the page. Here’s how to customize it:
+Arama çubuğu, sayfadaki en belirgin öğelerden biridir.  İşte özelleştirme yöntemi:
 
-#### Search Bar Container
+#### Arama Çubuğu Konteyneri
 
 ```css
 #searchbar {
-    margin-bottom: 200px;
-    width: 550px !important;   /* Ensure it matches the Auto Complete List's width */
-    border-radius: 10px;       /* Smooth corners */
+margin-bottom: 200px;
+width: 550px !important; /* Otomatik Tamamlama Listesinin genişliğiyle eşleştiğinden emin olun */
+border-radius: 10px; /* Düzgün köşeler */
 }
 ```
 
-#### Search Input Section
+#### Arama Giriş Bölümü
 
 ```css
 #searchinput {
-    background-color: rgb(0, 0, 0);  /* Input field background color */
-    color: rgb(255, 255, 255);       /* Text color */
+background-color: rgb(0, 0, 0); /* Giriş alanı arka plan rengi */
+color: rgb(255, 255, 255); /* Metin rengi */
 }
 ```
 
-#### Search Button
+#### Arama Düğmesi
 
 ```css
 #searchbutton {
-    color: rgb(255, 255, 255);       /* Color of the magnifier icon */
-    background-color: rgb(0, 0, 0);  /* Button background color */
+color: rgb(255, 255, 255); /* Büyüteç simgesinin rengi */
+background-color: rgb(0, 0, 0);  /* Düğme arka plan rengi */
 }
 ```
 
-### Customizing the Bottom Bar
+### Alt Çubuğu Özelleştirme
 
-The bottom bar can be styled to complement the overall theme:
+Alt çubuk, genel temayı tamamlayacak şekilde biçimlendirilebilir:
 
 ```css
 #features .flex-wrap {
-    padding-bottom: 20px;        /* Adjust the padding to your liking */
-    padding-top: 20px;
-    color: #fff;                 /* Text color */
-    background-color: #000;      /* Background color */
+padding-bottom: 20px; /* Dolguyu istediğiniz gibi ayarlayın */
+padding-top: 20px;
+color: #fff; /* Metin rengi */
+background-color: #000; /* Arka plan rengi */
 }
 ```
 
-### Advanced Customizations
+### Gelişmiş Özelleştirmeler
 
-#### Hover Effects
+#### Hover Efektleri
 
-To add hover effects for interactive elements:
+Etkileşimli öğeler için hover efektleri eklemek için:
 
 ```css
 #searchbutton:hover {
-    background-color: rgb(255, 165, 0); /* Change button color on hover */
-    color: #000;                         /* Change text/icon color on hover */
+background-color: rgb(255, 165, 0); /* Hover'da düğme rengini değiştir */
+color: #000;  /* Üzerine gelindiğinde metin/simge rengini değiştir */
 }
 ```
 
-#### Typography
+#### Tipografi
 
-To customize the font and text styles:
+Yazı tipini ve metin stillerini özelleştirmek için:
 
 ```css
 body {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    color: #333;  /* Base text color */
+font-family: 'Arial', sans-serif;
+font-size: 16px;
+color: #333; /* Temel metin rengi */
 }
 
 h1, h2, h3 {
-    font-family: 'Georgia', serif;
-    color: #444;
-}
+font-family: 'Georgia', serif;
+color: #444;
+ }
 ```
 
-### Example Themes
+### Örnek Temalar
 
-Explore these example themes created by the Artado community for inspiration and learning:
+İlham ve öğrenme için Artado topluluğu tarafından oluşturulan bu örnek temaları keşfedin:
 
-- [Merkür Theme](https://github.com/KerimCan05/merkur-artadotheme/)
-- [Atatürk Theme](https://github.com/KerimCan05/ataturk-artadorheme/)
+- [Merkür Teması](https://github.com/KerimCan05/merkur-artadotheme/)
+- [Atatürk Teması](https://github.com/KerimCan05/ataturk-artadorheme/)
 - [HereUS UI 3.1](https://github.com/islekcaganmert/artado-hereus-ui-3.1-theme)
 
-### Testing and Debugging
+### Test ve Hata Ayıklama
 
-While working on your theme, use browser developer tools (`F12` or `Ctrl+Shift+I`) to inspect elements, test CSS changes, and troubleshoot any issues.
+Temanız üzerinde çalışırken, öğeleri incelemek, CSS değişikliklerini test etmek ve sorunları gidermek için tarayıcı geliştirici araçlarını (`F12` veya `Ctrl+Shift+I`) kullanın.
 
-## Learn More
+## Daha Fazla Bilgi Edinin
 
-This is just the beginning. If you're interested in creating more sophisticated themes, dive deeper into the world of CSS:
+Bu sadece başlangıç.  Daha sofistike temalar oluşturmakla ilgileniyorsanız, CSS dünyasına daha derinlemesine dalın:
 
-- [CSS Basics](https://www.w3schools.com/css/css_intro.asp) - A great starting point if you're new to CSS.
-- [CSS Tricks](https://css-tricks.com/) - Advanced techniques and tips for improving your styles.
-- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS) - Comprehensive resource for CSS properties and best practices.
+- [CSS Temelleri](https://www.w3schools.com/css/css_intro.asp) - CSS'ye yeni başladıysanız harika bir başlangıç noktası.
+- [CSS Püf Noktaları](https://css-tricks.com/) - Stillerinizi geliştirmek için gelişmiş teknikler ve ipuçları.
+- [MDN Web Belgeleri](https://developer.mozilla.org/en-US/docs/Web/CSS) - CSS özellikleri ve en iyi uygulamalar için kapsamlı kaynak.
 
-## Upload Your Themes
+## Temalarınızı Yükleyin
 
-Once you've created your theme, share it with the community! You can upload your theme on [Artado Devs](https://devs.artado.xyz/):
+Temanızı oluşturduktan sonra, toplulukla paylaşın! Temanızı [Artado Devs](https://devs.artado.xyz/) adresine yükleyebilirsiniz:
 
-1. **Create an Account**: Sign up or log in to Artado Devs.
-2. **Upload Your Theme**: Navigate to the upload section, provide a description, and share your creation with the world.
+1. **Hesap Oluşturun**: Artado Devs'e kaydolun veya giriş yapın.  2. **Temanızı Yükleyin**: Yükleme bölümüne gidin, bir açıklama girin ve yaratımınızı dünyayla paylaşın.
 
 ---
 
-This guide should give you a strong foundation for creating and sharing custom themes for Artado Search. Have fun experimenting with different styles and making Artado Search your own!
+Bu kılavuz, Artado Search için özel temalar oluşturmanız ve paylaşmanız için size sağlam bir temel sağlamalıdır. Farklı stilleri deneyerek ve Artado Search'ü kendinize ait hale getirerek eğlenin!
