@@ -1,36 +1,37 @@
-# Artado Search Documentation
+# Artado search Dokumentaston
 
-Welcome to the official documentation repository for Artado Search! This repository contains all the information you need to understand, use, and contribute to Artado Search, a privacy-focused, open-source search engine. Whether you're a user, developer, or contributor, you'll find valuable resources here.
+Artado Arama için resmi belge deposuna hoş geldiniz! Bu depo, gizlilik odaklı, açık kaynaklı bir arama motoru olan Artado Arama'yı anlamak, kullanmak ve katkıda bulunmak için ihtiyaç duyduğunuz tüm bilgileri içerir. İster kullanıcı, ister geliştirici veya katkıda bulunan olun, burada değerli kaynaklar bulacaksınız.
 
-## About This Repository
+## Bu Depo Hakkında
 
-This repository serves as the central hub for all documentation related to Artado Search. Over time, the content here will be migrated to our upcoming documentation website, which will be built using DokuWiki. Until then, this repo will be the primary source of information.
+Bu depo, Artado Arama ile ilgili tüm belgelerin merkezi merkezi olarak hizmet verir. Zamanla, buradaki içerik DokuWiki kullanılarak oluşturulacak olan yaklaşan belge web sitemize taşınacaktır. O zamana kadar, bu depo birincil bilgi kaynağı olacaktır.
 
-## Structure
+## Yapı
 
-The documentation is organized into several key sections:
+Belgeler birkaç önemli bölüme ayrılmıştır:
 
-- **Getting Started**: Basic instructions to help users set up and start using Artado Search.
-- **User Guide**: Detailed information on using Artado Search, including features, tips, and best practices.
-- **Developer Guide**: Resources for developers looking to contribute to the project, including setup instructions, coding standards, and API documentation.
-- **FAQ**: Frequently asked questions and their answers.
+- **Başlarken**: Kullanıcıların Artado Arama'yı kurmasına ve kullanmaya başlamasına yardımcı olacak temel talimatlar.
+- **Kullanıcı Kılavuzu**: Özellikler, ipuçları ve en iyi uygulamalar dahil olmak üzere Artado Arama'yı kullanma hakkında ayrıntılı bilgiler.  - **Geliştirici Kılavuzu**: Projeye katkıda bulunmak isteyen geliştiriciler için kurulum talimatları, kodlama standartları ve API belgeleri dahil kaynaklar.
+- **SSS**: Sık sorulan sorular ve cevapları.
 
-## Contributing to Documentation
+## Belgelere Katkıda Bulunma
 
-We welcome and appreciate contributions to improve the documentation. If you spot any errors, have suggestions for new content, or want to help with the migration to DokuWiki, your help is invaluable. Here’s how you can contribute:
+Belgeleri iyileştirmek için katkılarınızı memnuniyetle karşılıyoruz ve takdir ediyoruz. Herhangi bir hata görürseniz, yeni içerik önerileriniz varsa veya DokuWiki'ye geçişte yardımcı olmak isterseniz, yardımınız paha biçilmezdir. İşte nasıl katkıda bulunabileceğiniz:
 
-1. **Report Issues**: If you find mistakes or unclear content, please [open an issue](https://github.com/Artado-Project/artadosearch/issues) to let us know.
-2. **Submit Pull Requests**: If you have improvements or new content to add, feel free to submit a pull request. Please ensure your contributions follow the existing format and style of the documentation.
-3. **Help with Migration**: We’ll be moving this documentation to a DokuWiki-based website. If you have experience with DokuWiki or want to assist with the migration, we’d love your help.
+1. **Sorun Bildirme**: Hatalar veya belirsiz içerik bulursanız, lütfen bize bildirmek için [bir sorun açın](https://github.com/Artado-Project/artadosearch/issues).
+2. **Çekme İstekleri Gönderme**: Ekleyeceğiniz iyileştirmeler veya yeni içerikler varsa, bir çekme isteği göndermekten çekinmeyin. Lütfen katkılarınızın belgelerin mevcut biçimini ve stilini takip ettiğinden emin olun.
+3. **Göçle İlgili Yardım**: Bu belgeleri DokuWiki tabanlı bir web sitesine taşıyacağız.  DokuWiki ile deneyiminiz varsa veya geçişte yardımcı olmak istiyorsanız, yardımınızı çok isteriz.
 
-## Roadmap
+## Yol Haritası
 
-- **Phase 1**: Maintain and update the documentation in this repository.
-- **Phase 2**: Migrate documentation to the DokuWiki-based website.
-- **Phase 3**: Maintain the website
+- **1. Aşama**: Bu depodaki belgeleri koruyun ve güncelleyin.
+- **2. Aşama**: Belgeleri DokuWiki tabanlı web sitesine taşıyın.
+- **3. Aşama**: Web sitesini koruyun
 
-## Contact
+## İletişim
 
-For any questions, suggestions, or feedback, feel free to reach out via [GitHub Issues](https://github.com/Artado-Project/artadosearch-docs/issues) or contact us directly at [arda@artadosearch.com](mailto:arda@artadosearch.com).
+Herhangi bir soru, öneri veya geri bildiriminiz varsa, [GitHub Sorunları](https://github.com/Artado-Project/artadosearch-docs/issues) aracılığıyla bize ulaşmaktan çekinmeyin veya doğrudan [arda@artadosearch.com](mailto:arda@artadosearch.com) adresinden bizimle iletişime geçin.
 
-Thank you for contributing to Artado Search and helping to build a more open and private web!
+Artado Search'e katkıda bulunduğunuz ve daha açık ve özel bir web oluşturmaya yardımcı olduğunuz için teşekkür ederiz!
+Cr:Sxinar
+https://sxi.is-a.dev
